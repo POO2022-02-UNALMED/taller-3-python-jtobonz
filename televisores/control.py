@@ -1,4 +1,4 @@
-from tv import TV
+from televisores.tv import TV
 class Control:
 
     def __init__(self):
@@ -41,4 +41,4 @@ class Control:
 
     def setCanal(self, canal):
         if isinstance(self.tv, TV):
-            self.tv.getCanal(canal)
+            self.tv.setCanal(canal)

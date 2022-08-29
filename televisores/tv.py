@@ -1,12 +1,4 @@
-class Marca:
-
-    def __init__(self, nombre ):
-        self.nombre = nombre
-    
-    def getNombre(self):
-        return self.nombre
-    def setNombre(self, nombre):
-        self.nombre = nombre
+from televisores.marca import Marca
 
 class TV:
     
@@ -22,9 +14,10 @@ class TV:
         self.numTV += 1
     
     def getMarca(self):
-        return self.marca
+            return self.marca
     def setMarca(self, marca):
-        self.marca = marca
+        if isinstance(marca, Marca):
+            self.marca = marca
 
     def getControl(self):
         return self.control
@@ -34,7 +27,7 @@ class TV:
     def getPrecio(self):
         return self.precio
     def setPrecio(self, precio):
-        self.marca = precio
+        self.precio = precio
 
     def getVolumen(self):
         return self.volumen

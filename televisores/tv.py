@@ -43,6 +43,8 @@ class TV:
 
     def getNumTV(self):
         return self.numTV
+    
+    @staticmethod
     def setNumTV(self, numTV):
         self.numTV = numTV
 

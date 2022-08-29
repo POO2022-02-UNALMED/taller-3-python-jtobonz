@@ -41,9 +41,8 @@ class TV:
         if (canal <= 120 and canal >= 0 and self.estado == True):
             self.canal = canal
 
-    @staticmethod
-    def getNumTV(self):
-        return self.numTV
+    def getNumTV():
+        return TV.numTV
     
     def setNumTV(numTV):
         TV.numTV = numTV

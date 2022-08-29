@@ -1,4 +1,4 @@
-from televisores.marca import Marca
+from marca import Marca
 
 class TV:
     

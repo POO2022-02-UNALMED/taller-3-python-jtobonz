@@ -1,3 +1,4 @@
+from tv import TV
 class Control:
 
     def __init__(self):
@@ -9,8 +10,9 @@ class Control:
         self.tv = tv
     
     def enlazar(self, tv):
-        self.setTv(tv)
-        self.tv.setControl(self)
+        if isinstance(tv, TV):
+            self.setTv(tv)
+            self.tv.setControl(self)
 
     
     def turnOn(self):
